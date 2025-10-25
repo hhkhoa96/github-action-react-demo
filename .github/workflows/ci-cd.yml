@@ -37,6 +37,14 @@ jobs:
       - name: Build app
         run: npm run build
 
+  test_job:
+    name: Test Job
+    runs-on: ubuntu-latest
+    needs: ci
+    steps:
+      - name: Check github.ref
+        run: echo "Ref is ${{ github.ref }}"
+
   # --- CD: deploy lên S3 sau khi merge vào main ---
   deploy:
     name: Deploy to S3 (on main)
