@@ -17,6 +17,9 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
+      - name: Check github.ref
+        run: echo "Ref is ${{ github.ref }}"
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
