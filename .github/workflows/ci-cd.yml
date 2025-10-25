@@ -42,8 +42,7 @@ jobs:
     name: Deploy to S3 (on main)
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: ci   # đảm bảo CI chạy xong trước khi deploy
-
+    needs: ci
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
