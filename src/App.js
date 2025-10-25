@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React with hhkhoa96 version 2
+          Learn React with hhkhoa96 version 3
         </a>
       </header>
     </div>
